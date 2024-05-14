@@ -1,4 +1,8 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
   #stage {
     position: absolute;
     top: 50%;
@@ -470,3 +474,10 @@
     }
   }
   
+  body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  main, aside{
+    padding: 30px;
+  }

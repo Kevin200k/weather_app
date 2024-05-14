@@ -121,11 +121,17 @@
             <input type="search" name="weatherSearch" id="weatherSearch" placeholder = "Search for places...">
             <button id="cancelSearch">Cancel</button>
         </form>
-        <img src="" alt="Weather Image of current location" id="weatherImage">
-        <p id="dateandtime"></p>
-        <p id="asidedescription"></p>
-        <p id="asideprecipitation"></p>
-        <img src="" alt="Picture of current Location" id="asidelocation">
+        <img src="" alt="Weather Image of current location" id="weather">
+        <p id = "currenttemperature"></p>
+        <p id="dateandtime">
+            <span id = "day"></span>
+            <span id = "time"></span>
+        </p>
+        <p id="currentdescription"></p>
+        <p id="currentprecipitation">
+            Rain - <span id = "rain"></span>
+        </p>
+        <div id = "currentLocation"></div>
     </aside>
     <main>
         <nav>
@@ -133,52 +139,39 @@
             <button id="farenheitUnit">°F</button>
         </nav>
         <section id="currentweather">
-            <h2 id="currentLocation"></h2>
-            <div id="currentweathercard">
-                <div>
-                    <p>Current Weather</p>
-                    <p id="currenttime"></p>
-                </div>
-                <div>
-                    <img src="" alt="" id="weather">
-                    <div>
-                        <div id="currenttemperature"></div>
-                        <div id="currentdescription"></div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Wind</p>
-                            <div id="currentwindspeed"></div>
-                        </div>
-                        <div>
-                            <p>Humidity</p>
-                            <div id="currenthumidity"></div>
-                        </div>
-                        <div>
-                            <p>Feels like</p>
-                            <div id="currentfeelslike"></div>
-                        </div>
-                        <div>
-                            <p>Visibility</p>
-                            <div id="currentvisibilty"></div>
-                        </div>
-                        <div>
-                            <p>UV Index</p>
-                            <div id="currentuvindex"></div>
-                        </div>
-                        <div>
-                            <p>Pressure</p>
-                            <div id="currentpressure"></div>
-                        </div>
-                        <div>
-                            <p>Gust speed</p>
-                            <div id="currentgustspeed"></div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <p>UV Index</p>
+                <div id="currentuvindex"></div>
             </div>
+            <div>
+                <p>Wind Status</p>
+                <div id="currentwindspeed"></div>
+            </div>
+            <div>
+                <p>Sunrise & Sunset</p>
+                <div id="currentsunrise"></div>
+                <div id="currentsunset"></div>
+            </div>
+            <div>
+                <p>Humidity</p>
+                <div id="currenthumidity"></div>
+                <p id = "hummidityComment"></p>
+            </div>
+            <div>
+                <p>Visibility</p>
+                <div id="currentvisibilty"></div>
+                <p id="visibilityComment"></p>
+            </div>
+            <div>
+                <p>Pressure</p>
+                <div id="currentpressure"></div>
+                <p id="pressureComment"></p>
+            </div>
+    </div>
         </section>
-        <section id="forecastweather"></section>
+        <section id="forecastweather">
+
+        </section>
     </main>
     <script src="./Assets/JS/currentWeather.js"></script>
 </body>
